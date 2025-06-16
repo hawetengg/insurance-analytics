@@ -18,8 +18,10 @@ env/
 *.ipynb_checkpoints
 
 # Data files
-data/*
-!data/.gitkeep  # Keeps empty data/ folder
+# Ignore everything in 'data/' but keep .gitkeep and track DVC files
+data/
+!data/*.dvc
+!data/.gitkeep
 
 # VS Code
 .vscode/
