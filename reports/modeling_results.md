@@ -1,0 +1,12 @@
+# Modeling Results
+- **Objective**: Predict `TotalClaims` using `Province`, `VehicleType`, `Gender`, `MonthsSinceStart`
+- **Data Preparation**: Cleaned 618,174 rows, encoded categoricals, split: Train (494,539), Test (123,635)
+- **Linear Regression**: MSE = 688,989.43, R² = 0.00
+- **Random Forest**: MSE = 688,989.43, R² = 0.00
+- **Feature Importance (Random Forest)**:
+  - Province_Gauteng: 0.8255
+  - VehicleType_Light Commercial: 0.8626
+  - Gender_Not specified: 0.8179
+  - MonthsSinceStart: 0.5738
+  - Others: < 0.1965
+- **Interpretation**: Models underperform (R² = 0.00), possibly due to skewed data; consider log transformation or further feature engineering
